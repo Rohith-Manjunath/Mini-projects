@@ -1,63 +1,68 @@
 body{
-    background-color: rgb(12, 12, 64);
-    font-family: sans-serif;
+    background-color: rgb(10, 10, 65);
     height: 100vh;
-    width: 100%;
-    display: flex;
+    border: 1px solid white;
+    position: relative;
+    margin: 0;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+    color:white;
+    font-family: sans-serif;
+}
+
+.container{
+box-shadow: 0px 15px 30px 10px rgba(0,0,0,0.5);
+border: none;
+position: absolute;
+top:50%;
+left: 50%;
+padding: 30px;
+text-align: center;
+font-size: 30px;
+overflow: hidden;
 
 }
 
-
-.center{
-   color:white;
-   font-size: 50px;
-   padding: 30px 60px;
-   box-shadow: 0 25px 50px rgba(0,0,0,0.5);
-
-
+.container span:nth-child(1){
+background:linear-gradient(to right,rgb(35, 47, 78),rgb(16, 125, 214));
+width:100px;
+height: 2px;
+position:absolute;
+top:0;
+left:0;
+animation: 2s anim1 infinite;
+animation-timing-function: ease;
+}
+.container span:nth-child(2){
+background:linear-gradient(to right,rgb(35, 47, 78),rgb(16, 125, 214));
+height:200px;
+width: 2px;
+position:absolute;
+top:0;
+right:0;
+animation: 2s anim2 infinite ;
+animation-timing-function: ease;
+animation-delay: 0.6s;
 }
 
-.center:before{
-    content:"";
-    position:absolute;
-    top:2px;
-    left:2px;
-    width: 50%;
-    background: rgba(255,255,255,0);
-    overflow: hidden;
-
-    
-}
-
-.center span:nth-child(1){
-    position: absolute;
-    top: 265px;
-    left: 140px;
-    width: 250px;
-    height: 2px;
-    background:linear-gradient(to right,#0c002b,#1779ff);
-    animation: anim1 2s linear infinite;
-
-}
-
-@keyframes anim1{
+@keyframes anim1 {
     0%{
-transform: translateX(-100%);
+transform: translateX(-100px);
     }
 
     100%{
-        transform: translateX(100%);
+        transform: translateX(150px);
 
     }
 }
+@keyframes anim2 {
+    0%{
+transform: translateY(-150px);
+    }
 
-.center span:nth-child(2){
-    position: absolute;
-    top: 240px;
-    right:140px;
-    width: 2px;
-    height: 140px;
-    background:linear-gradient(to bottom,#0c002b,#1779ff);
+    100%{
+        transform: translateY(150px);
+
+    }
 }
