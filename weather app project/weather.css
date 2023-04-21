@@ -14,8 +14,8 @@ body{
 }
 
 .container{
-    width:400px;
-    height:400px;
+    width:750px;
+    height:480px;
     border: 1px solid white;
     border-radius: 5px;
     background-color: #001d3d;
@@ -28,9 +28,14 @@ gap:10px;
   
 }
 
+#degree,#wind,#fahrenheit,#time{
+    width:130px;
+  
+}
+
 input{
     
-    width:250px;
+    width:550px;
     padding:8px;
     margin:10px;
     outline:none;
@@ -61,7 +66,7 @@ transform: translate(1px,1px);
 box-shadow: none;
 }
 .image{
-    width:350px;
+    width:380px;
     height: 150px;
     border: 1px solid white;
     align-self: flex-start;
@@ -79,14 +84,44 @@ img{
 
 .icons{
     display: flex;
+    flex-direction: row;
     align-self: flex-start;
-    gap:30px;
-    margin-left: 20px;
+        margin-left: 20px;
     margin-top: 10px;
 
 }
 
-.fa-sun{
-font-size: 20px;
+.fa-sun,.fa-droplet-degree{
+font-size: 30px;
 
+}
+
+.one,.two,.three,.four{
+width:170px;
+border: 1px solid white;
+padding: 20px;
+margin: 2px;
+
+}
+
+.condition{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   gap:30px;
+   width:600px;
+}
+
+.place_condition img{
+    width:40px;
+    border-radius: 10px;
+}
+
+.place_condition h2{
+    text-decoration: underline;
+    letter-spacing: 1px;
+}
+
+.place_condition #weather_condition{
+    text-decoration: none;
 }
