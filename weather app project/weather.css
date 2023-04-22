@@ -125,3 +125,183 @@ margin: 2px;
 .place_condition #weather_condition{
     text-decoration: none;
 }
+
+@media screen and (max-width:754px ){
+   input{
+width:500px;
+
+    }
+
+    .container{
+
+        width:100%;
+    }
+   
+}
+
+@media  screen and (max-width:667px){
+    .icons{
+flex-wrap: wrap;   
+ }
+ .container{
+    height: auto;
+    width:100%;
+ }
+}
+@media  screen and (max-width:553px){
+ 
+   .container{
+    height: auto;
+    width:100%;
+
+   }
+ 
+
+}
+@media  screen and (max-width:473px){
+ 
+   .container{
+    height: auto;
+    width:100%;
+
+   }
+
+}
+@media  screen and (max-width:389px){
+ 
+   .container{
+    height:360px;
+    width:100%;
+
+   }
+
+}
+@media  screen and (max-width:303px){
+ 
+   .container{
+    height: auto;
+    width:100%;
+
+   }
+
+}
+@media  screen and (max-width:217px){
+ 
+   .container{
+    height: auto;
+    width:100%;
+
+   }
+
+}
+
+@media screen and (max-width:589px){
+    input{
+        width:350px;
+    }
+    
+}
+@media screen and (max-width:437px){
+    input{
+        width:250px;
+    }
+    
+}
+@media screen and (max-width:359px){
+    input{
+        width:200px;
+    }
+    
+}
+@media screen and (max-width:292px){
+    input{
+        width:110px;
+    }
+
+    .condition{
+        width:200px;
+    }
+    
+}
+
+@media screen and (max-width:739px) {
+.icons{
+    width:100%;
+    flex-wrap: wrap;
+}    
+
+.container{
+    height:auto;
+}
+}
+
+@media screen and (max-width:554px) {
+    .condition{
+width:450px;
+    }
+
+}
+    
+@media screen and (max-width:645px) {
+input{
+    width:400px;
+}  
+}
+
+@media screen and (max-width:574px) {
+    input{
+        width:260px;
+    }
+
+    .condition{
+        width:450px;
+        height:auto;
+    }
+
+
+   
+}
+@media screen and (max-width:403px) {
+    input{
+        width:100px;
+    }
+
+
+   
+}
+@media screen and (max-width:572px) {
+  #city{
+font-size: 20px; 
+ }
+
+   
+}
+
+@media screen and (max-width:511px) {
+    .condition{
+        width:350px;
+    }
+
+    #weather_image{
+        width:100px;
+        height:100%;
+      }
+      #city{
+        font-size: 16px; 
+         }
+}
+
+@media screen and (max-width:410px){
+ input{
+width:170px;
+ }   
+}
+@media screen and (max-width:391px){
+.container{
+    
+        height:700px;
+        padding: 30px;
+    
+}
+
+}
