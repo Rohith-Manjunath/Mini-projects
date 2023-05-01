@@ -20,7 +20,6 @@ async function data(){
         wind.textContent="Wind:"+data.current.wind_mph+" m/hr"
         humidity.textContent="Humidity:"+data.current.humidity
         weather_condition.textContent=data.current.condition.text
-        condition_pic.textContent=data.current.condition.icon
         if(data.current.temp_c >=30){
             weather_image.src="./sun1.jpg"
         }
