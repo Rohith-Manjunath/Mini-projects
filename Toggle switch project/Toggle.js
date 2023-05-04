@@ -42,6 +42,6 @@ function togle(){
 
 
 
-slider.addEventListener("click",()=>{
+container.addEventListener("click",()=>{
     togle()
 })
