@@ -8,6 +8,65 @@ const language1=document.getElementById("language1")
 const placeholder =document.querySelector("#placeholder")
 let bool=true;
 let bool1=true;
+let bool2=true;
+const questions=document.querySelector(".questions");
+const question_dropdown=document.querySelectorAll("#question-dropdown");
+const description=document.querySelectorAll("#description");
+const span=document.querySelectorAll("#span")
+let show=true;
+
+
+
+function showDescription(){
+    
+    for(let i=0 ;i<description.length;i++){
+
+        if(bool2){
+
+            description[i].style.fontSize=`${23}px`;
+        description[i].style.height=`auto`;
+        description[i].style.padding=`26px`;
+        description[i].style.opacity=`1`;
+        span[i].style.transform="rotate(40deg)";
+        span[i].style.transition="0.4s";
+        description[i].style.transition="0.2s";
+
+        
+        }
+
+    else{
+
+        description[i].style.fontSize=`${0}px`;
+        description[i].style.height=`${0}px`;
+        description[i].style.opacity=`0`;
+        description[i].style.padding=`0px`;
+        span[i].style.transform="rotate(0deg)";
+
+        
+
+    }
+
+    
+
+    }
+    
+    
+    
+    
+        bool2=!bool2
+
+   }
+
+
+
+
+for(let i=0;i<question_dropdown.length;i++){
+    question_dropdown[i].addEventListener("click",()=>{
+        showDescription()   
+    
+    })
+}
+
 
 
 function dropdownShow(){

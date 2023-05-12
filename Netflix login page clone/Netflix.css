@@ -11,7 +11,7 @@ body{
     background-repeat: no-repeat;
     font-family: sans-serif;
     position: relative;
-    height: 3200px;
+    height: 4500px;
     /* width:max-content; */
     background-color:rgb(6, 6, 38);
 
@@ -211,7 +211,8 @@ margin-left: -20px;
 
 .questions{
     position: absolute;
-height: 670px;
+    border:1px solid white;
+height: auto;
 width: 1210px;
 top:1880px;
 color: white;
@@ -227,23 +228,34 @@ gap:10px;
 
 
 
-.questions div{
-    padding: 30px;
+.questions #question-dropdown{
+    padding: 15px;
     background-color: rgb(22, 24, 60);
     font-size: 25px;
-
     display: flex;
     flex-direction: row;
     justify-content:space-between ;
     transition: all 0.4s;
+    text-align: center;
+    align-items: center;
 
 
 }
 
 
 
+ #description{
+    background-color: rgb(22, 24, 60);
+    font-size:0px;
+    height: 0;
+    margin-top: -9px;
+    opacity: 0;
+    width:auto;
+    line-height: 30px;
+}
 
-.questions div:hover{
+
+.questions #question-dropdown:hover{
     background-color:rgb(55, 57, 117) ;
 cursor: pointer;
 }
@@ -263,7 +275,7 @@ cursor: pointer;
 
 #secondForm{
     position: absolute;
-    top:2590px;
+    top:3590px;
     width:650px;
 left:125px;
  
@@ -299,7 +311,7 @@ footer{
     height: 450px;
     /* border:1px solid white; */
     position: absolute;
-    bottom:-35px;
+    bottom:10px;
     left:150px;
     color:white;
     display: flex;
@@ -395,4 +407,10 @@ opacity: 0;
 
 .dropdown1 p:hover{
     background-color: rgb(73, 73, 255);
+}
+
+#span{
+    font-size: 50px;
+
+  
 }
