@@ -260,6 +260,11 @@ gap:10px;
 cursor: pointer;
 }
 
+#description:hover{
+    background-color:rgb(55, 57, 117) ;
+
+}
+
 .another-email{
     position: absolute;
     top:2100px;
