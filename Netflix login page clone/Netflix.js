@@ -14,58 +14,73 @@ const question_dropdown=document.querySelectorAll("#question-dropdown");
 const description=document.querySelectorAll("#description");
 const span=document.querySelectorAll("#span")
 let show=true;
+let bool3=true;
 
 
 
 function showDescription(){
+
+    description.forEach((dropdown)=>{
+
+        {bool3&&span.forEach((spann)=>{
+            if(bool2){
+
+                dropdown.style.fontSize=`${23}px`;
+            dropdown.style.height=`auto`;
+            dropdown.style.padding=`26px`;
+            dropdown.style.opacity=`1`;
+            spann.style.transform="rotate(40deg)";
+            spann.style.transition="0.4s";
+            dropdown.style.transition="0.2s";
+
+
+            }
     
-    for(let i=0 ;i<description.length;i++){
-
-        if(bool2){
-
-            description[i].style.fontSize=`${23}px`;
-        description[i].style.height=`auto`;
-        description[i].style.padding=`26px`;
-        description[i].style.opacity=`1`;
-        span[i].style.transform="rotate(40deg)";
-        span[i].style.transition="0.4s";
-        description[i].style.transition="0.2s";
-
-        
+        else{
+    
+            dropdown.style.fontSize=`0px`;
+            dropdown.style.height=`${0}px`;
+            dropdown.style.opacity=`0`;
+            dropdown.style.padding=`0px`;
+            spann.style.transform="rotate(0deg)";
         }
 
-    else{
-
-        description[i].style.fontSize=`${0}px`;
-        description[i].style.height=`${0}px`;
-        description[i].style.opacity=`0`;
-        description[i].style.padding=`0px`;
-        span[i].style.transform="rotate(0deg)";
-
         
-
     }
+    )
+    bool3=!bool3
 
-    
-
-    }
-    
-    
-    
-    
-        bool2=!bool2
-
-   }
-
-
-
-
-for(let i=0;i<question_dropdown.length;i++){
-    question_dropdown[i].addEventListener("click",()=>{
-        showDescription()   
-    
-    })
 }
+    
+    
+    
+}
+
+)
+bool2=!bool2
+
+
+    }
+    
+    
+    
+    
+
+   
+
+
+
+
+zz
+   question_dropdown.forEach(drop=>{
+drop.addEventListener("click",()=>{
+     showDescription()   
+ 
+ })
+})
+
+    
+
 
 
 
