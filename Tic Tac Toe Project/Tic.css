@@ -1,0 +1,41 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container{
+    height: 350px;
+    width: 350px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    padding: 10px;
+    position: relative;
+}
+
+button{
+    border: 1px solid black;
+    font-size: 50px;
+    width: 110px;
+    height: 110px;
+ 
+}
+
+h2{
+    color: white;
+    position: absolute;
+    top:100px;
+    font-size: 30px;
+
+}
