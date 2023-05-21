@@ -41,3 +41,124 @@ body{
     top: 115px;
     left: 60px;
 }
+
+
+.wheels{
+    position: absolute;
+    top: 275px;
+    display: flex;
+    gap: 80px;
+    left: 25px;
+}
+
+.div{
+    margin: 50px;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+
+}
+
+.carbody{
+    background-color: rgb(0, 217, 255);
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    top:175px;
+    left: 20px;
+}
+
+.wheel1,.wheel2{
+animation-name:ratateWheels;
+animation-iteration-count: infinite;
+animation-duration: 2s;
+transition: all 1s;
+}
+
+@keyframes ratateWheels {
+ from{
+transform: rotateZ(0deg);
+ }   
+
+ to{
+transform: rotateZ(360deg);
+ }
+}
+
+/* .spoke1{
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: 20px;
+}
+
+.spoke2{
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    transform: rotate(90deg);
+
+} */
+
+.wheel1,.wheel2{
+    background-color: rgb(255, 94, 0);
+    width:80px;
+height: 80px;
+border-radius: 50%;
+}
+
+
+@keyframes change-bg-color {
+    
+from{
+    transform: rotateY(0deg);
+}
+
+to{
+    transform: rotateY(180deg);
+
+}
+
+}
+
+.light{
+    position: absolute;
+    width: 10px;
+    height: 25px;
+    background-color: rgb(232, 122, 13);
+    top: 20px;
+    left: 20px;
+    box-shadow: 0 0 20px 10px rgb(255, 166, 0);
+    border: none;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+}
+
+@keyframes move {
+    from{
+
+transform: translateX(0px) rotate(0deg);
+
+    }
+
+    to{
+        transform: translateX(200px) rotateY(180deg);
+
+    }
+}
+/* @keyframes moveback {
+    from{
+
+transform: translateX(500px);
+    }
+
+    to{
+        transform: translateX(0px);
+
+    }
+} */
