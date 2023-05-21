@@ -86,24 +86,6 @@ transform: rotateZ(360deg);
  }
 }
 
-/* .spoke1{
-    width: 20px;
-    height: 2px;
-    background-color: black;
-    position: absolute;
-    top: 20px;
-}
-
-.spoke2{
-    width: 30px;
-    height: 2px;
-    background-color: black;
-    position: absolute;
-    top: 25px;
-    left: 20px;
-    transform: rotate(90deg);
-
-} */
 
 .wheel1,.wheel2{
     background-color: rgb(255, 94, 0);
@@ -151,14 +133,3 @@ transform: translateX(0px) rotate(0deg);
 
     }
 }
-/* @keyframes moveback {
-    from{
-
-transform: translateX(500px);
-    }
-
-    to{
-        transform: translateX(0px);
-
-    }
-} */
