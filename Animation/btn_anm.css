@@ -20,7 +20,7 @@ left: 50%;
 padding: 30px;
 text-align: center;
 font-size: 30px;
-overflow: hidden;
+overflow: hidden; 
 
 }
 
@@ -36,7 +36,7 @@ animation-timing-function: ease;
 }
 .container span:nth-child(2){
 background:linear-gradient(to right,rgb(35, 47, 78),rgb(16, 125, 214));
-height:200px;
+height:100px;
 width: 2px;
 position:absolute;
 top:0;
@@ -44,6 +44,26 @@ right:0;
 animation: 2s anim2 infinite ;
 animation-timing-function: ease;
 animation-delay: 0.6s;
+}
+.container span:nth-child(3){
+background:linear-gradient(to left,rgb(35, 47, 78),rgb(16, 125, 214));
+width:150px;
+height: 2px;
+position:absolute;
+top:92px;
+right:-220px;
+animation: 2s anim3 infinite ;
+animation-timing-function: ease;
+animation-delay: 0.8s;
+
+}
+
+.container:active{
+    transform:translate(5px,5px);
+}
+
+.container:hover{
+    cursor: pointer;
 }
 
 @keyframes anim1 {
@@ -66,3 +86,14 @@ transform: translateY(-150px);
 
     }
 }
+@keyframes anim3 {
+    0%{
+transform: translateX(0px) ;
+    }
+
+    100%{
+        transform: translateX(-250px);
+
+    }
+}
+
