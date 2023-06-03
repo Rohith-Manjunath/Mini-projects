@@ -17,7 +17,6 @@ hour_needle.style.transform=`rotate(${hour_Deg}deg)`
 minutes_needle.style.transform=`rotate(${min_Deg}deg)`
 seconds_needle.style.transform=`rotate(${sec_Deg}deg)`
 
-    console.log(hour,mins,secs)
 }
 
 

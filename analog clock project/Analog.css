@@ -117,3 +117,36 @@ transform-origin: right;
     transform: rotate(-90deg);
     transform-origin: left;
 }
+
+@media screen and (max-width:390px){
+.circle{
+    width: 200px;
+    height: 200px;
+}
+
+#minutes_needle{
+    width:60px;
+    height: 3px;
+}
+#seconds_needle{
+    width:50px;
+height:1px;
+top: 100px;
+left: 45px;
+border-top-right-radius: 50%;
+border-bottom-right-radius: 50%;
+}
+
+#dot{
+    top: 85px;
+    left: 85px;
+}
+
+#hour_needle{
+    width:45px;
+    height: 5px;
+}
+
+
+
+}
