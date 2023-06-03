@@ -299,9 +299,26 @@ width:170px;
 @media screen and (max-width:391px){
 .container{
     
-        height:700px;
+        height:800px;
         padding: 30px;
     
+}
+
+.condition{
+    flex-wrap: wrap;
+}
+
+}
+@media screen and (max-width:340px){
+.container{
+    
+        height:1000px;
+        padding: 30px;
+    
+}
+
+.condition{
+    flex-wrap: wrap;
 }
 
 }
