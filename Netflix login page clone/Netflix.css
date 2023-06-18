@@ -11,7 +11,7 @@ body{
     background-repeat: no-repeat;
     font-family: sans-serif;
     position: relative;
-    height: 4500px;
+    height: 3200px;
     /* width:max-content; */
     background-color:rgb(6, 6, 38);
 
@@ -280,7 +280,7 @@ cursor: pointer;
 
 #secondForm{
     position: absolute;
-    top:3590px;
+    top:2600px;
     width:650px;
 left:125px;
  
@@ -316,7 +316,7 @@ footer{
     height: 450px;
     /* border:1px solid white; */
     position: absolute;
-    bottom:10px;
+    bottom:-20px;
     left:150px;
     color:white;
     display: flex;
