@@ -163,10 +163,8 @@ padding: 1rem;
 
 
 
-
-
 .library-icons{
-    padding: 0.3rem;
+    padding: 0.3rem 0.5rem;
     border-radius: 50%;
     transition: all 0.5s;
 }
@@ -320,8 +318,9 @@ section{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-height: 21rem;
+height: 21.5rem;
 overflow: hidden;
+margin-bottom: 1rem;
 
 }
 
@@ -345,7 +344,7 @@ overflow: hidden;
 
 .cards{
     
-    background-color: rgb(33, 32, 32);
+    background-color: rgb(24, 24, 24);
     height: 100%;
     width: 18%;
     display: flex;
@@ -408,7 +407,7 @@ border-radius: 50%;
 
 .cards:hover{
     cursor: pointer;
-    background-color: rgba(141, 136, 136, 0.1);
+    background-color: rgba(182, 177, 177, 0.1);
 
 }
 
