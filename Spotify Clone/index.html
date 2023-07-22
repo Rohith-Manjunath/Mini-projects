@@ -12,6 +12,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Poppins:wght@300&family=Roboto:wght@500;700&family=Source+Code+Pro:ital@1&display=swap" rel="stylesheet">
+<link rel="icon" href="./images/spotify.png" type="image/icon type">
   </head>
   <body>
     <div class="container">
@@ -37,10 +41,11 @@
               <p>Your Library</p>
             </div>
             <div>
-              <p class="fa-solid fa-plus library-icons" style="
-                font-size: 1.1rem; margin-left: 1rem;"></p>
-              <p class="library-icons" style="
-              font-size: 1.1rem;">🡢</p>
+              <p
+                class="fa-solid fa-plus library-icons"
+                style="font-size: 1.1rem; margin-left: 1rem"
+              ></p>
+              <p class="library-icons" style="font-size: 1.1rem">🡢</p>
             </div>
           </div>
 
@@ -79,7 +84,7 @@
           </div>
           <div class="nav-right">
             <a href="">Explore Premium</a>
-            <span><i class="fa-solid fa-arrow-down"></i> Install app</span>
+            <i class="fa-solid fa-arrow-down"></i> Install app
             <i class="fa-regular fa-user"></i>
           </div>
         </nav>
@@ -89,585 +94,684 @@
             <h3>Recently played</h3>
             <div class="songs-cards">
               <div class="cards">
-                <img src="./images/bajirao.jpg" alt="" />
-                <h4>Bajirao Mastani</h4>
-                <p>Various Artists</p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
+                <div class="card-container">
+                  <div class="image-container">
+                    <img src="./images/bajirao.jpg" alt="" />
+                  </div>
+
+                  <div class="artist-container">
+                    <h4>Bajirao Mastani</h4>
+                    <p>Various Artists</p>
+                  </div>
+
+                  <i class="fa-sharp fa-solid fa-play"></i>
+                </div>
               </div>
               <div class="cards">
-                <img
-                  src="./images/javed bashir.jpg"
-                  alt=""
-                  style="border-radius: 50%"
-                />
-                <h4>Javed Bashir</h4>
-                <p>Artist</p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
+                <div class="card-container">
+                  <div class="image-container">
+                    <img src="./images/javed bashir.jpg" alt="" />
+                  </div>
+
+                  <div class="artist-container">
+                    <h4>Bajirao Mastani</h4>
+                    <p>Various Artists</p>
+                  </div>
+
+                  <i class="fa-sharp fa-solid fa-play"></i>
+                </div>
               </div>
               <div class="cards">
-                <img src="./images/hondisi.jpg" alt="" />
-                <h4>Hondisi bareyiri</h4>
-                <p>Joe Costa</p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-            </div>
-          </section>
-          <section class="recently-played">
-            <h3>Episodes for you <a href="">Show all</a></h3>
-            <div class="songs-cards">
-              <div class="cards" style="padding-top: 0;">
-                <img src="./images/r1-i1.jpg" alt="" />
-                <h4>Episode 1</h4>
-                <p id="date_duration">Sep 2020 <span>&middot;</span> 27 mins</p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards" style="padding-top: 0;">
-                <img src="./images/r1-i2.jpg" alt="" />
-                <h4>SHRIMAD BHAGAV...</h4>
-                <p id="date_duration">Jul 2021 <span>&middot;</span> 12 mins</p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards" style="padding-top: 0;">
-                <img src="./images/r1-i3.jpg" alt="" />
-                <h4>Krishna talks about...</h4>
-                <p id="date_duration">Jul 2021 <span>&middot;</span> 12 mins</p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards" style="padding-top: 0;">
-                <img src="./images/r1-i4.jpg" alt="" />
-                <h4>परिवार मानवीय मूल्यों...</h4>
+                <div class="card-container">
+                  <div class="image-container">
+                    <img src="./images/hondisi.jpg" alt="" />
+                  </div>
 
-                <p id="date_duration">May 14 <span>&middot;</span> 10 mins</p>
+                  <div class="artist-container">
+                    <h4>Bajirao Mastani</h4>
+                    <p>Various Artists</p>
+                  </div>
 
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards" style="padding-top: 0;">
-                <img src="./images/r1-i5.jpg" alt="" />
-                <h4>Mahabharata Episo...</h4>
-                <p id="date_duration">Apr 2014 <span>&middot;</span> 24 mins</p>
-
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-            </div>
-          </section>
-          <section class="recently-played">
-            <h3>Your top mixes <a href="">Show all</a></h3>
-            <div class="songs-cards">
-              <div class="cards ">
-                <img src="./images/r2-i1.jpg" alt="" />
-                <h4>2000s Mix</h4>
-                <p class="top-mixes">
-                  Pritam, Javed Ali, Amit Trivedi and more
-                </p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards ">
-                <img src="./images/r2-i2.jpg" alt="" />
-                <h4>90s Mix</h4>
-                <p class="top-mixes">
-                  INTERWORLD, Pankaj Udhas, Abhijeet and...
-                </p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards ">
-                <img src="./images/r2-i3.jpg" alt="" />
-                <h4>2010s Mix</h4>
-                <p class="top-mixes">
-                  Javed Bashir, Ami <br />
-                  Mishra, Naveen Madh...
-                </p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards ">
-                <img src="./images/r2-i4.jpg" alt="" />
-                <h4>Ami Mishra Mix</h4>
-                <p class="top-mixes">
-                  Palak Mucchal, Jubin Nautiyal and Gajendra...
-                </p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards ">
-                <img src="./images/r2-i5.jpg" alt="" />
-                <h4>Ami Mishra Mix</h4>
-                <p class="top-mixes">
-                  Thaman S, Dhibu Ninan <br />
-                  Thomas, Ilayaraja an...
-                </p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-            </div>
-          </section>
-          <section class="recently-played">
-            <h3>Made For Your <a href="">Show all</a></h3>
-            <div class="songs-cards">
-              <div class="cards ">
-                <img src="./images/r3-i1.jpg" alt="" />
-                <h4>Daily Mix 1</h4>
-                <p class="top-mixes">
-                  Pritam, Arijit Singh, Jeet Gannguli and more
-                </p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards ">
-                <img src="./images/r3-i2.jpg" alt="" />
-                <h4>Daily Mix 2</h4>
-                <p class="top-mixes">
-                  Arjun Janya, Siddhartha Belmannu, Navaneeth...
-                </p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards ">
-                <img src="./images/r3-i3.jpg" alt="" />
-                <h4>Discover Weekly</h4>
-                <p class="top-mixes">
-                  Your weekly mixtape of fresh music. Enjoy new...
-                </p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-
-              <div class="cards ">
-                <img src="./images/r3-i4.jpg" alt="" />
-                <h4>Release Radar</h4>
-                <p class="top-mixes">
-                  Catch all the latest <br />
-                  music by the artists you...
-                </p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-            </div>
-          </section>
-          <section class="recently-played">
-            <h3>ThrowBack <a href="">Show all</a></h3>
-            <div class="songs-cards">
-              <div class="cards " >
-                <img src="./images/r4-i1.jpg" alt="" />
-                <h4>00's Mass Paatalu</h4>
-                <p class="top-mixes">Telugu 2000's Massss!</p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards ">
-                <img src="./images/r4-i2.jpg" alt="" />
-                <h4>All Out 00's Hindi</h4>
-                <p class="top-mixes">
-                  Bollywood songs that <br />
-                  ruled hearts in the Y2K...
-                </p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards ">
-                <img src="./images/r4-i3.jpg" alt="" />
-                <h4>90's Swagger</h4>
-                <p class="top-mixes">
-                  Everything from cheesy floor-fillers to big beat...
-                </p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-
-              <div class="cards ">
-                <img src="./images/r4-i4.jpg" alt="" />
-                <h4>R90's Dance Bollywo...</h4>
-                <p class="top-mixes">
-                  Get jiggy with 90s <br />
-                  'dinchak' beats. Cove...
-                </p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards ">
-                <img src="./images/r4-i5.jpg" alt="" />
-                <h4>All Out 80s</h4>
-                <p class="top-mixes">The biggest songs of the 1980s.</p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
+                  <i class="fa-sharp fa-solid fa-play"></i>
+                </div>
               </div>
             </div>
           </section>
 
           <section class="recently-played">
-            <h3>Discover Picks For You <a href="">Show all</a></h3>
+            <h3>Recently played</h3>
             <div class="songs-cards">
-              <div class="cards ">
-                <img src="./images/r5-i1.jpg" alt="" />
-                <h4>Starring Sonam Ka...</h4>
-                <p class="top-mixes">
-                  essential tracks of <br />
-                  Sonam kapoor, all in o...
-                </p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards ">
-                <img src="./images/r5-i2.jpg" alt="" />
-                <h4>Rewind With Sanam</h4>
-                <p class="top-mixes">Sanam</p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards ">
-                <img src="./images/r5-i3.jpg" alt="" />
-                <h4>Bhajrangi Bhaijaan</h4>
-                <p class="top-mixes">Pritam</p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
+              <div class="cards">
+                <div class="card-container">
+                  <div class="image-container">
+                    <img src="./images/r1-i1.jpg" alt="" />
+                  </div>
 
-              <div class="cards ">
-                <img src="./images/r5-i4.jpg" alt="" />
-                <h4>Guru (Original Mot...</h4>
-                <p class="top-mixes">A.R.Rahman</p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
+                  <div class="artist-container">
+                    <h4>Episode 1</h4>
+                    <p>Sep 2020 · 27 min</p>
+                  </div>
+
+                  <i class="fa-sharp fa-solid fa-play"></i>
+                </div>
               </div>
-              <div class="cards ">
-                <img src="./images/r5-i5.jpg" alt="" />
-                <h4>Atrangi Re</h4>
-                <p class="top-mixes">A.R.Rahman.</p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
+              <div class="cards">
+                <div class="card-container">
+                  <div class="image-container">
+                    <img src="./images/r1-i2.jpg" alt="" />
+                  </div>
+
+                  <div class="artist-container">
+                    <h4>SHRIMAD BHAGW...</h4>
+                    <p>Jul 2021 · 12 min</p>
+                  </div>
+
+                  <i class="fa-sharp fa-solid fa-play"></i>
+                </div>
               </div>
-            </div>
+              <div class="cards">
+                <div class="card-container">
+                  <div class="image-container">
+                    <img src="./images/r1-i3.jpg" alt="" />
+                  </div>
+
+                  <div class="artist-container">
+                    <h4>
+                      Krishna talks about..
+                      </h4>
+                    <p>May 2021 · 3 min</p>
+                  </div>
+                  <i class="fa-sharp fa-solid fa-play"></i>
+                </div>
+              </div>
+              <div class="cards">
+                <div class="card-container">
+                  <div class="image-container">
+                    <img src="./images/r1-i4.jpg" alt="" />
+                  </div>
+
+                  <div class="artist-container">
+                    <h4>परिवार मानवीय मूल्यों...</h4>
+                    <p>
+                      May 14 · 10 min
+                    </p>
+                  </div>
+                  <i class="fa-sharp fa-solid fa-play"></i>
+                </div>
+              </div>
+              <div class="cards">
+                <div class="card-container">
+                  <div class="image-container">
+                    <img src="./images/r1-i5.jpg" alt="" />
+                  </div>
+
+                  <div class="artist-container">
+                    <h4>Mahabharata Episo..</h4>
+                    <p>Apr 2014 · 24 min</p>
+                  </div>
+                  <i class="fa-sharp fa-solid fa-play"></i>
+                </div>
+              </div>
+             
           </section>
 
-          <section class="recently-played">
-            <h3>Discover Picks For You <a href="">Show all</a></h3>
-            <div class="songs-cards">
-              <div class="cards ">
-                <img src="./images/r6-i1.jpg" alt="" />
-                <h4>Udit Narayan Radio</h4>
-                <p class="top-mixes">By Spotify</p>
+<!-- Row2 -->
+<!-- Row2 -->
+<!-- Row2 -->
+<!-- Row2 -->
 
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards ">
-                <img src="./images/r6-i2.jpg" alt="" />
-                <h4>AP Dhillon Radio</h4>
-                <p class="top-mixes">By Spotify</p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards ">
-                <img src="./images/r6-i3.jpg" alt="" />
-                <h4>arijit Singh Radio</h4>
-                <p class="top-mixes">By Sppotify</p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
 
-              <div class="cards ">
-                <img src="./images/r6-i4.jpg" alt="" />
-                <h4>Sidhu Moose Wala ...</h4>
-                <p class="top-mixes">By Spotify</p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards ">
-                <img src="./images/r6-i5.jpg" alt="" />
-                <h4>KK Radio</h4>
-                <p class="top-mixes">By Spotify</p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-            </div>
-          </section>
+<section class="recently-played">
+  <h3>Made For You</h3>
+  <div class="songs-cards">
+    <div class="cards">
+      <div class="card-container">
+        <div class="image-container">
+          <img src="./images/r3-i1.jpg" alt="" />
+        </div>
 
-          <section class="recently-played">
-            <h3>India's Best <a href="">Show all</a></h3>
-            <div class="songs-cards">
-              <div class="cards ">
-                <img src="./images/r7-i1.jpg" alt="" />
-                <h4>Punjabi 101</h4>
-                <p class="top-mixes">
-                  Ultimate 101 Punjabi Hits with Hard Sandhu
-                </p>
+        <div class="artist-container">
+          <h4>Daily Mix 1</h4>
+          <p>Pritam, Arijit Singh, Jeet Gannguli and more</p>
+        </div>
 
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards ">
-                <img src="./images/r7-i2.jpg" alt="" />
-                <h4>Tollywood Pearls</h4>
-                <p class="top-mixes">
-                  The finest set of Telugu music from past 5...
-                </p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards ">
-                <img src="./images/r7-i3.jpg" alt="" />
-                <h4>Bollywood Butter</h4>
-                <p class="top-mixes">
-                  B bole toh biggest blockbusters, right her...
-                </p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
+        <i class="fa-sharp fa-solid fa-play"></i>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card-container">
+        <div class="image-container">
+          <img src="./images/r3-i2.jpg" alt="" />
+        </div>
 
-              <div class="cards ">
-                <img src="./images/r7-i4.jpg" alt="" />
-                <h4>Indie India</h4>
-                <p class="top-mixes">
-                  Best of the Indian Indie scene. Cover - Akanks...
-                </p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards ">
-                <img src="./images/r7-i5.jpg" alt="" />
-                <h4>Kollywood Cream</h4>
-                <p class="top-mixes">
-                  Music collection of Tamil Music form the past 10...
-                </p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-            </div>
-          </section>
+        <div class="artist-container">
+          <h4>Daily Mix 2</h4>
+          <p>Arjun Janya, Siddhartha Belmannu, Navaneeth..</p>
+        </div>
 
-          <section class="recently-played">
-            <h3>Trending Now <a href="">Show all</a></h3>
-            <div class="songs-cards">
-              <div class="cards ">
-                <img src="./images/r8-i1.jpg" alt="" />
-                <h4>Mahiye jinna Sohna</h4>
-                <p class="top-mixes">Darshan Raval</p>
+        <i class="fa-sharp fa-solid fa-play"></i>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card-container">
+        <div class="image-container">
+          <img src="./images/r3-i3.jpg" alt="" />
+        </div>
 
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards ">
-                <img src="./images/r8-i2.jpg" alt="" />
-                <h4>Tum Kya Mile(Fro...</h4>
-                <p class="top-mixes">
-                  Pritem, Arijit Singh, <br />
-                  Shreya Ghoshal
-                </p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards ">
-                <img src="./images/r8-i3.jpg" alt="" />
-                <h4>Yaar Kya Sataya Hua...</h4>
-                <p class="top-mixes">B Praak, Jaani</p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
+        <div class="artist-container">
+          <h4>
+            Discover Weekly
+            </h4>
+          <p>Your weekly mixtape of fresh music. Enjoy new..</p>
+        </div>
+        <i class="fa-sharp fa-solid fa-play"></i>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card-container">
+        <div class="image-container">
+          <img src="./images/r3-i4.jpg" alt="" />
+        </div>
 
-              <div class="cards ">
-                <img src="./images/r8-i4.jpg" alt="" />
-                <h4>Naseeb Se(From "...</h4>
-                <p class="top-mixes">
-                  Payal Dev, Vishal <br />
-                  Mishra, A.M.Turaz
-                </p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards ">
-                <img src="./images/r8-i5.jpg" alt="" />
-                <h4>Still Rollin</h4>
-                <p class="top-mixes">Shubh</p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-            </div>
-          </section>
+        <div class="artist-container">
+          <h4>Release Radar</h4>
+          <p>
+            Catch all the latest music from artists you follow
+          </p>
+        </div>
+        <i class="fa-sharp fa-solid fa-play"></i>
+      </div>
+    </div>
+</section>
 
-          <section class="recently-played">
-            <h3>Recommended for today <a href="">Show all</a></h3>
-            <div class="songs-cards">
-              <div class="cards ">
-                <img src="./images/r9-i1.jpg" alt="" />
-                <h4>Hamari Adhuri Kah...</h4>
-                <p class="top-mixes">
-                  Jeet Gannguli, Mithoon, <br />
-                  Ami Mishra
-                </p>
 
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards ">
-                <img src="./images/r9-i2.jpg" alt="" />
-                <h4>Best Of Shraddha ...</h4>
-                <p class="top-mixes">Shraddha Kapoor</p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards ">
-                <img src="./images/r9-i3.jpg" alt="" />
-                <h4>Humnava (From "H...</h4>
-                <p class="top-mixes">Mithoon, Papon</p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
 
-              <div class="cards ">
-                <img src="./images/r9-i4.jpg" alt="" />
-                <h4>2016 Shining Star...</h4>
-                <p class="top-mixes">Palak Mucchal</p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards ">
-                <img src="./images/r9-i5.jpg" alt="" />
-                <h4>Humnava Mere</h4>
-                <p class="top-mixes">
-                  Jubin Nautiyal, Rocky - <br />
-                  Shiv
-                </p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-            </div>
-          </section>
-          <section class="recently-played">
-            <h3>Popular albums <a href="">Show all</a></h3>
-            <div class="songs-cards">
-              <div class="cards ">
-                <img src="./images/r10-i1.jpg" alt="" />
-                <h4>Kabir Singh</h4>
-                <p class="top-mixes">Various Artists</p>
 
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards ">
-                <img src="./images/r10-i2.jpg" alt="" />
-                <h4>Phir Aur Kya Chahi...</h4>
-                <p class="top-mixes">
-                  Sachin-Jigar, Arijit <br />
-                  Singh, Amitabh...
-                </p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards ">
-                <img src="./images/r10-i3.jpg" alt="" />
-                <h4>Champagne Talk</h4>
-                <p class="top-mixes">
-                  King</p>
-                  <span><i class="fa-sharp fa-solid fa-play"></i></span>
-                </p>
-              </div>
 
-              <div class="cards ">
-                <img src="./images/r10-i4.jpg" alt="" />
-                <h4>Aashiqui 2</h4>
-                <p class="top-mixes">
-                  Mithoon, Ankit Tiwari, <br />
-                  Jeet Gannguli
-                </p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards ">
-                <img src="./images/r10-i5.jpg" alt="" />
-                <h4>Yeh Jawaani Hai D...</h4>
-                <p class="top-mixes">Pritam</p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-            </div>
-          </section>
-          <section class="recently-played">
-            <h3>Based on your recent listening <a href="">Show all</a></h3>
-            <div class="songs-cards">
-              <div class="cards ">
-                <img src="./images/r11-i1.jpg" alt="" />
-                <h4>Starring Emraan H...</h4>
-                <p class="top-mixes">Essential tracks of <br> Emraan Hashmi, all in... </p>
+<section class="recently-played">
+  <h3>Throback</h3>
+  <div class="songs-cards">
+    <div class="cards">
+      <div class="card-container">
+        <div class="image-container">
+          <img src="./images/r4-i1.jpg" alt="" />
+        </div>
 
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards ">
-                <img src="./images/r11-i2.jpg" alt="" />
-                <h4>00's Love Hits</h4>
-                <p class="top-mixes">
-                 Fall in love with 00's <br> Bollywood like never...
-                </p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards ">
-                <img src="./images/r11-i3.jpg" alt="" />
-                <h4>Sad Hindi Melodies</h4>
-                <p class="top-mixes">
-                  Soulful tunes for the <br> heart that has loved an... </p>
-                  <span><i class="fa-sharp fa-solid fa-play"></i></span>
-                </p>
-              </div>
+        <div class="artist-container">
+          <h4>00's Mass paatalu
+            </h4>
+          <p>Telugu 2000's Massss!</p>
+        </div>
 
-              <div class="cards ">
-                <img src="./images/r11-i4.jpg" alt="" />
-                <h4>Bollywood Mush</h4>
-                <p class="top-mixes">
-                  Let these songs be the background score to...
-                </p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards ">
-                <img src="./images/r11-i5.jpg" alt="" />
-                <h4>Bollywood & Chill</h4>
-                <p class="top-mixes">Wind down the summer <br> heat with bollywood's...</p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-            </div>
-          </section>
-          <section class="recently-played">
-            <h3>Fresh new music <a href="">Show all</a></h3>
-            <div class="songs-cards">
-              <div class="cards ">
-                <img src="./images/r12-i1.jpg" alt="" />
-                <h4>New Music Hindi</h4>
-                <p class="top-mixes">Catch the latest Hindi <br> songs of the week... </p>
+        <i class="fa-sharp fa-solid fa-play"></i>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card-container">
+        <div class="image-container">
+          <img src="./images/r4-i2.jpg" alt="" />
+        </div>
 
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards ">
-                <img src="./images/r12-i2.jpg" alt="" />
-                <h4>New in Dance</h4>
-                <p class="top-mixes">
-                 Your weekly floor fillers. <br> Cover - Zara Hatke Zar... 
-                </p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards ">
-                <img src="./images/r12-i3.jpg" alt="" />
-                <h4>Latest Tamil</h4>
-                <p class="top-mixes">
-                  New Music from <br> kollywood. Cover : LEO</p>
-                  <span><i class="fa-sharp fa-solid fa-play"></i></span>
-                </p>
-              </div>
+        <div class="artist-container">
+          <h4>All out 00's Hindi</h4>
+          <p>
+            Bollywood songs that ruled hearts in the Y2K...</p>
+        </div>
 
-              <div class="cards ">
-                <img src="./images/r12-i4.jpg" alt="" />
-                <h4>Latest Malayalam</h4>
-                <p class="top-mixes">
-                  Catch the latest songs <br> from Mollywood! Cove...
-                </p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards ">
-                <img src="./images/r12-i5.jpg" alt="" />
-                <h4>New Music Punjabi</h4>
-                <p class="top-mixes">Stay updated with all the <br> smashing new pubjabi...</p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-            </div>
-          </section>
-          <section class="recently-played">
-            <h3>Today's biggest hits <a href="">Show all</a></h3>
-            <div class="songs-cards">
-              <div class="cards ">
-                <img src="./images/r13-i1.jpg" alt="" />
-                <h4>Mega Hit Mix</h4>
-                <p class="top-mixes">A mega mix of 75 <br> favorites from the last...</p>
+        <i class="fa-sharp fa-solid fa-play"></i>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card-container">
+        <div class="image-container">
+          <img src="./images/r4-i3.jpg" alt="" />
+        </div>
 
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards ">
-                <img src="./images/r13-12.jpg" alt="" />
-                <h4>Hot Hits Punjabi</h4>
-                <p class="top-mixes">
-                 Catch the hottest <br> Punjabi tracks with... 
-                </p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards" style="padding-top: 1rem;">
-                <img src="./images/r13-i3.jpg" alt="" />
-                <h4>Hot Hits Hindi</h4>
-                <p class="top-mixes">
-                  Hottest Hindi music <br> Served here. Cover-...</p>
-                  <span><i class="fa-sharp fa-solid fa-play"></i></span>
-                </p>
-              </div>
+        <div class="artist-container">
+          <h4>
+            90's Swagger
+            </h4>
+          <p>
+            Everything from cheesy floor-fillers to big beat...</p>
+        </div>
+        <i class="fa-sharp fa-solid fa-play"></i>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card-container">
+        <div class="image-container">
+          <img src="./images/r4-i4.jpg" alt="" />
+        </div>
 
-              <div class="cards ">
-                <img src="./images/r13-i4.jpg" alt="" />
-                <h4>Kollywood Cream</h4>
-                <p class="top-mixes">
-                  Finest collection of Tamil <br> Music from the past 10...
-                </p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-              <div class="cards ">
-                <img src="./images/r13-i5.jpg" alt="" />
-                <h4>Hot Hits Tamil</h4>
-                <p class="top-mixes">Tune into the hottest <br> tracks of kollywood!...</p>
-                <span><i class="fa-sharp fa-solid fa-play"></i></span>
-              </div>
-            </div>
-          </section>
+        <div class="artist-container">
+          <h4>90s Dance Bollywo..</h4>
+          <p>
+            Get jiggy with 90s 'dhinchak' beats. Cover..
+          </p>
+        </div>
+        <i class="fa-sharp fa-solid fa-play"></i>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card-container">
+        <div class="image-container">
+          <img src="./images/r4-i5.jpg" alt="" />
+        </div>
+
+        <div class="artist-container">
+          <h4>All Out 80s</h4>
+          <p>
+           The biggest songs of the 1980s.
+          </p>
+        </div>
+        <i class="fa-sharp fa-solid fa-play"></i>
+      </div>
+    </div>
+</section>
+
+
+
+
+
+
+<section class="recently-played">
+  <h3>Discover Picks For You</h3>
+  <div class="songs-cards">
+    <div class="cards">
+      <div class="card-container">
+        <div class="image-container">
+          <img src="./images/r5-i1.jpg" alt="" />
+        </div>
+
+        <div class="artist-container">
+          <h4>Starring Sonam Ka..
+            
+            
+            </h4>
+          <p>Essential tracks of Sonam Kapoor, all in o..</p>
+        </div>
+
+        <i class="fa-sharp fa-solid fa-play"></i>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card-container">
+        <div class="image-container">
+          <img src="./images/r5-i2.jpg" alt="" />
+        </div>
+
+        <div class="artist-container">
+          <h4>Rewind With Sanam
+            
+            </h4>
+          <p>
+            Sanam</p>
+        </div>
+
+        <i class="fa-sharp fa-solid fa-play"></i>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card-container">
+        <div class="image-container">
+          <img src="./images/r5-i3.jpg" alt="" />
+        </div>
+
+        <div class="artist-container">
+          <h4>
+            Bajrangi Bhaijaan
+
+
+            </h4>
+          <p>
+            Pritam</p>
+        </div>
+        <i class="fa-sharp fa-solid fa-play"></i>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card-container">
+        <div class="image-container">
+          <img src="./images/r5-i4.jpg" alt="" />
+        </div>
+
+        <div class="artist-container">
+          <h4>Guru (Original Moti..
+            </h4>
+          <p>
+            A.R. Rahman
+          </p>
+        </div>
+        <i class="fa-sharp fa-solid fa-play"></i>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card-container">
+        <div class="image-container">
+          <img src="./images/r5-i5.jpg" alt="" />
+        </div>
+
+        <div class="artist-container">
+          <h4>Atrangi Re
+            </h4>
+          <p>
+            A.R. Rahman
+
+          </p>
+        </div>
+        <i class="fa-sharp fa-solid fa-play"></i>
+      </div>
+    </div>
+</section>
+
+
+
+
+<section class="recently-played">
+  <h3>popular Radio</h3>
+  <div class="songs-cards">
+    <div class="cards">
+      <div class="card-container">
+        <div class="image-container">
+          <img src="./images/r6-i1.jpg" alt="" />
+        </div>
+
+        <div class="artist-container">
+          <h4>Arijit Singh Radio
+            
+            
+            
+            
+            </h4>
+          <p>
+            By Spotify
+            </p>
+        </div>
+
+        <i class="fa-sharp fa-solid fa-play"></i>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card-container">
+        <div class="image-container">
+          <img src="./images/r6-i2.jpg" alt="" />
+        </div>
+
+        <div class="artist-container">
+          <h4>AP Dhillon Radio
+            
+            </h4>
+          <p>
+            By Spotify</p>
+        </div>
+
+        <i class="fa-sharp fa-solid fa-play"></i>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card-container">
+        <div class="image-container">
+          <img src="./images/r6-i3.jpg" alt="" />
+        </div>
+
+        <div class="artist-container">
+          <h4>
+            Bajrangi Bhaijaan
+
+
+            </h4>
+          <p>
+            Pritam</p>
+        </div>
+        <i class="fa-sharp fa-solid fa-play"></i>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card-container">
+        <div class="image-container">
+          <img src="./images/r6-i4.jpg" alt="" />
+        </div>
+
+        <div class="artist-container">
+          <h4>Sidhu Moose Wala..
+            
+            </h4>
+          <p>
+            By Spotify
+          </p>
+        </div>
+        <i class="fa-sharp fa-solid fa-play"></i>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card-container">
+        <div class="image-container">
+          <img src="./images/r6-i5.jpg" alt="" />
+        </div>
+
+        <div class="artist-container">
+          <h4>KK Radio
+            
+            </h4>
+          <p>
+            By Spotify
+
+          </p>
+        </div>
+        <i class="fa-sharp fa-solid fa-play"></i>
+      </div>
+    </div>
+</section>
+
+
+
+<section class="recently-played">
+  <h3>Recommended for today</h3>
+  <div class="songs-cards">
+    <div class="cards">
+      <div class="card-container">
+        <div class="image-container">
+          <img src="./images/r9-i1.jpg" alt="" />
+        </div>
+
+        <div class="artist-container">
+          <h4>Hamari Adhuri Kah..
+            
+            
+
+            </h4>
+          <p>
+            Jeet Gannguli, Mithoon, Ami Mishra            </p>
+        </div>
+
+        <i class="fa-sharp fa-solid fa-play"></i>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card-container">
+        <div class="image-container">
+          <img src="./images/r9-i2.jpg" alt="" />
+        </div>
+
+        <div class="artist-container">
+          <h4>Best Of Shraddha K.
+           
+            
+            
+            </h4>
+          <p>
+            Shraddha Kapoor</p>
+        </div>
+
+        <i class="fa-sharp fa-solid fa-play"></i>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card-container">
+        <div class="image-container">
+          <img src="./images/r9-i3.jpg" alt="" />
+        </div>
+
+        <div class="artist-container">
+          <h4>
+            Humnava (From "H..
+
+
+            </h4>
+          <p>
+            Mithoon, Papon
+</p>
+        </div>
+        <i class="fa-sharp fa-solid fa-play"></i>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card-container">
+        <div class="image-container">
+          <img src="./images/r9-i4.jpg" alt="" />
+        </div>
+
+        <div class="artist-container">
+          <h4>2016 Shinning Star ..
+            
+            </h4>
+          <p>
+            Palak Muchhal
+          </p>
+        </div>
+        <i class="fa-sharp fa-solid fa-play"></i>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card-container">
+        <div class="image-container">
+          <img src="./images/r9-i5.jpg" alt="" />
+        </div>
+
+        <div class="artist-container">
+          <h4>KK Radio
+            
+            </h4>
+          <p>
+            By Spotify
+
+          </p>
+        </div>
+        <i class="fa-sharp fa-solid fa-play"></i>
+      </div>
+    </div>
+</section>
+
+
+
+<section class="recently-played">
+  <h3>Recommended for today</h3>
+  <div class="songs-cards">
+    <div class="cards">
+      <div class="card-container">
+        <div class="image-container">
+          <img src="./images/r10-i1.jpg" alt="" />
+        </div>
+
+        <div class="artist-container">
+          <h4>Kabir Singh
+            
+            
+            
+
+            </h4>
+          <p>
+Various Artists           </p>
+        </div>
+
+        <i class="fa-sharp fa-solid fa-play"></i>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card-container">
+        <div class="image-container">
+          <img src="./images/r10-i2.jpg" alt="" />
+        </div>
+
+        <div class="artist-container">
+          <h4>Phir Aur Kya Chahi..
+           
+            
+            
+            </h4>
+          <p>
+            Sachin-Jigar, Arijit Singh, Amitabh Bhattacharya
+          </p>
+        </div>
+
+        <i class="fa-sharp fa-solid fa-play"></i>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card-container">
+        <div class="image-container">
+          <img src="./images/r10-i3.jpg" alt="" />
+        </div>
+
+        <div class="artist-container">
+          <h4>
+            Champagne Talk
+
+
+
+            </h4>
+          <p>
+            King
+          </p>
+        </div>
+        <i class="fa-sharp fa-solid fa-play"></i>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card-container">
+        <div class="image-container">
+          <img src="./images/r10-i4.jpg" alt="" />
+        </div>
+
+        <div class="artist-container">
+          <h4>Aashiqui 2
+            
+            
+            </h4>
+          <p>
+            Mithoon, Ankit Tiwari, Jeet Gannguli
+          </p>
+        </div>
+        <i class="fa-sharp fa-solid fa-play"></i>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card-container">
+        <div class="image-container">
+          <img src="./images/r10-i5.jpg" alt="" />
+        </div>
+
+        <div class="artist-container">
+          <h4>Tere Vaaste (From ".
+            
+            
+            </h4>
+          <p>
+            Varun Jain, Sachin-Jigar, Amitabh Bhattacharya
+
+          </p>
+        </div>
+        <i class="fa-sharp fa-solid fa-play"></i>
+      </div>
+    </div>
+</section>
+
+
           <footer>
             <div class="footer-top">
               <div class="footer-top-1">
@@ -697,25 +801,13 @@
               </div>
             </div>
             <div class="footer-bottom">
-              <a href="">
-                Legal
-              </a>
-              <a href="">
-                Privacy Center
-              </a>
-              <a href="">
-                Privacy Policy
-              </a>
-              <a href="">
-                Cookies
-              </a>
-              <a href="">
-                About Ads
-              </a>
-              <a href="">
-                Accessibility
-              </a>
-              <p >© 2023 Spotify AB</p>
+              <a href=""> Legal </a>
+              <a href=""> Privacy Center </a>
+              <a href=""> Privacy Policy </a>
+              <a href=""> Cookies </a>
+              <a href=""> About Ads </a>
+              <a href=""> Accessibility </a>
+              <p>© 2023 Spotify AB</p>
             </div>
           </footer>
         </div>
