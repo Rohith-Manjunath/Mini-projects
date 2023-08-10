@@ -23,9 +23,9 @@ async function data() {
       humidity.textContent = "Humidity:" + data.current.humidity;
       weather_condition.textContent = data.current.condition.text;
       if (data.current.temp_c >= 30) {
-        weather_image.src = "./sun1.jpg";
+        weather_image.src = "./hot.jpg";
       } else if (data.current.temp_c < 30) {
-        weather_image.src = "./cloudy.webp";
+        weather_image.src = "./cool.jpg";
       }
 
       console.log(data);
