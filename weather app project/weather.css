@@ -11,6 +11,7 @@ body{
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
+    overflow: scroll;
 }
 
 .container{
@@ -61,6 +62,10 @@ button{
     font-size: 17px;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
 button:active{
 transform: translate(1px,1px);
 box-shadow: none;
@@ -79,14 +84,15 @@ box-shadow: none;
 }
 
 img{
-    width:160px;
+    width:50%;
+    height: 100%;
 }
 
 .icons{
     display: flex;
     flex-direction: row;
     align-self: flex-start;
-        margin-left: 20px;
+    margin-left: 20px;
     margin-top: 10px;
 
 }
@@ -126,199 +132,97 @@ margin: 2px;
     text-decoration: none;
 }
 
-@media screen and (max-width:754px ){
-   input{
-width:500px;
 
-    }
+@media (320px<=width<=480px){
+
+
+
 
     .container{
-
+        width:95%;
+    padding:1.2rem;
+    height: 85%;
+ 
+      
+    }
+    
+    #degree,#wind,#fahrenheit,#time{
+        width:50%;
+        font-size: 1.2rem;
+      
+    }
+    
+    input{
+        
+        width:60%;
+        font-size: 0.9rem;
+       
+    
+    }
+    
+    .div{
+        justify-content:space-between;
+        width: 100%;
+        
+    }
+    
+  
+    .image{
         width:100%;
+        height: 8rem;
+        margin: 0 auto;
     }
-   
-}
 
-@media  screen and (max-width:667px){
+    .image h2{
+        font-size: 1.5rem;
+    }
+    
+    img{
+        width:50%;
+        height: 100%;
+    }
+    
     .icons{
-flex-wrap: wrap;   
- }
- .container{
-    height: auto;
-    width:100%;
- }
-}
-@media  screen and (max-width:553px){
- 
-   .container{
-    height: auto;
-    width:100%;
+        display: grid;
+        width: 100%;
+        margin: 0;
+        grid-template-columns: 1fr 1fr;
+    
+    }
 
-   }
- 
-
-}
-@media  screen and (max-width:473px){
- 
-   .container{
-    height: auto;
-    width:100%;
-
-   }
-
-}
-@media  screen and (max-width:389px){
- 
-   .container{
-    height:360px;
-    width:100%;
-
-   }
-
-}
-@media  screen and (max-width:303px){
- 
-   .container{
-    height: auto;
-    width:100%;
-
-   }
-
-}
-@media  screen and (max-width:217px){
- 
-   .container{
-    height: auto;
-    width:100%;
-
-   }
-
-}
-
-@media screen and (max-width:589px){
-    input{
-        width:350px;
+    .icons div{
+        width: 100%;
     }
     
-}
-@media screen and (max-width:437px){
-    input{
-        width:250px;
+    #humidity{
+        font-size: 1.2rem;
     }
     
+#degree,#wind,#fahrenheit,#time{
+    width:100%;
+    margin: auto auto;
+  
 }
-@media screen and (max-width:359px){
-    input{
-        width:200px;
-    }
-    
-}
-@media screen and (max-width:292px){
-    input{
-        width:110px;
-    }
-
+ 
     .condition{
-        width:200px;
-    }
-    
-}
-
-@media screen and (max-width:739px) {
-.icons{
-    width:100%;
-    flex-wrap: wrap;
-}    
-
-.container{
-    height:auto;
-}
-}
-
-@media screen and (max-width:554px) {
-    .condition{
-width:450px;
-    }
-
-}
-    
-@media screen and (max-width:645px) {
-input{
-    width:400px;
-}  
-}
-
-@media screen and (max-width:574px) {
-    input{
-        width:260px;
-    }
-
-    .condition{
-        width:450px;
-        height:auto;
+        flex-direction: column;
+       width:100%;
     }
 
 
-   
-}
-@media screen and (max-width:403px) {
-    input{
-        width:100px;
+    
+    .place_condition img{
+        border-radius: 10px;
     }
-
-
-   
-}
-@media screen and (max-width:572px) {
-  #city{
-font-size: 20px; 
- }
-
-   
-}
-
-@media screen and (max-width:511px) {
-    .condition{
-        width:350px;
+    
+    .place_condition h2{
+        text-decoration:none;
     }
-
-    #weather_image{
-        width:100px;
-        height:100%;
-      }
-      #city{
-        font-size: 16px; 
-         }
-}
-
-@media screen and (max-width:410px){
- input{
-width:170px;
- }   
-}
-@media screen and (max-width:391px){
-.container{
     
-        height:800px;
-        padding: 30px;
-    
-}
-
-.condition{
-    flex-wrap: wrap;
-}
 
 }
-@media screen and (max-width:340px){
-.container{
-    
-        height:1000px;
-        padding: 30px;
-    
-}
 
-.condition{
-    flex-wrap: wrap;
-}
 
-}
+
+
+
